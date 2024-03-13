@@ -60,7 +60,17 @@ export const AbouthMethods = () => {
                         <Swiper
                             modules={[EffectFade, Pagination]}
                             spaceBetween={0}
-                            slidesPerView={3}
+                            breakpoints={{
+                                320: {
+                                    slidesPerView: 1,
+                                },
+                                768: {
+                                    slidesPerView: 2,
+                                },
+                                960: {
+                                    slidesPerView: 3,
+                                },
+                            }}
                             className='flex gap-10 items-start overflow-auto pb-10'
                             onSwiper={(swiper) => setSlider(swiper)}
                         >

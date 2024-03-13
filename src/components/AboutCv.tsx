@@ -50,7 +50,7 @@ export const AboutCv = () => {
 
     return (
         <div className="flex flex-col md:flex-row justify-between items-center py-20">
-            <div className="md:w-6/12 pl-4 md:pl-[15%]">
+            <div className="md:w-6/12 pl-4 md:pl-[15%] pb-12 md:pb-0">
                 <h3 className="font-bold italic text-[30px] text-[#1C1B20] mb-5 leading-none">{allWpPage.edges[0].node.cvAbout.title1}</h3>
                 <div className="text-[#606060] leading-[30px] mb-10" dangerouslySetInnerHTML={{ __html: allWpPage.edges[0].node.cvAbout.description }}></div>
                 <a
@@ -65,10 +65,10 @@ export const AboutCv = () => {
             </div>
             <div className='w-full md:w-5/12 min-h-[566px] lg:min-h-[800px] relative overflow-hidden'>
                 <div
-                    className="flex items-center flex-col w-full h-[800px]"
+                    className="flex items-center flex-col w-full h-[520px] md:h-[800px]"
                 >
                     <div
-                        className={`flex items-center justify-between w-[566px] relative z-10`}
+                        className="flex items-center justify-between  w-full box-border px-4 md:w-[566px] relative z-10"
                     >
                         <button
                             onClick={goBack}
@@ -86,7 +86,7 @@ export const AboutCv = () => {
                         </button>
                     </div>
 
-                    <div className="w-[566px] h-[800px] justify-center mx-auto relative">
+                    <div className="w-full h-[520px] md:w-[566px] md:h-[800px] justify-center mx-auto relative">
                         <Swiper
                             modules={[EffectFade, Pagination]}
                             spaceBetween={0}
@@ -99,7 +99,7 @@ export const AboutCv = () => {
                                 allWpPage.edges[0].node.cvAbout.cvGallery.nodes.map((item: any, index: number) => {
                                     return (
                                         <SwiperSlide key={index}>
-                                            <img className="h-[281px] md:h-[781px] object-cover w-full" src={item.publicUrl} alt="" />
+                                            <img className="h-auto md:h-[781px] object-cover w-full" src={item.publicUrl} alt="" />
                                         </SwiperSlide>
                                     );
                                 })}
