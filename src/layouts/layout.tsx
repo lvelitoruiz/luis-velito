@@ -3,6 +3,7 @@ import { BorderTop } from '../components/BorderTop'
 import { BorderBottom } from '../components/BorderBottom'
 import { BorderLeft } from '../components/BorderLeft'
 import { BorderRight } from '../components/BorderRight'
+import { MenuButtonResponsive } from '../components/MenuButtonResponsive'
 
 export const Layout = ({ children }: { children: ReactNode }) => {
   return (

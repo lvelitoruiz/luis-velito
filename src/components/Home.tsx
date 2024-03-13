@@ -8,6 +8,7 @@ import { WorkIndex } from './WorkIndex';
 import { WorkProjects } from './WorkProjects';
 import { GalleryIndex } from './GalleryIndex';
 import { Footer } from './Footer';
+import { MenuButtonResponsive } from './MenuButtonResponsive';
 
 export const Home = () => {
     const divRef = useRef<HTMLDivElement>(null);
@@ -45,6 +46,7 @@ export const Home = () => {
         <div ref={divRef} onScroll={handleScroll} className="h-screen bg-[#F8F8F8] overflow-y-auto overflow-x-hidden">
             <MenuButton onExpand={toggleExpanded} />
             <Navigation expanded={expanded} onExpand={toggleExpanded} />
+            <MenuButtonResponsive onExpand={toggleExpanded} expanded={expanded} />
             <Banner expanded={toExpand} />
 
             <Carousel />

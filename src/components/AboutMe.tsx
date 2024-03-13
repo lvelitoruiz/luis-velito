@@ -10,6 +10,7 @@ import { useInView } from 'react-intersection-observer';
 import { AboutTech } from './AboutTech';
 import { AboutCareer } from './AboutCareer';
 import { AbouthMethods } from './AbouthMethods';
+import { MenuButtonResponsive } from './MenuButtonResponsive';
 
 export const AboutMe = () => {
 
@@ -40,6 +41,7 @@ export const AboutMe = () => {
             <div className='min-h-4 overflow-hidden w-full'>
                 <MenuButton onExpand={toggleExpanded} />
                 <Navigation expanded={expanded} onExpand={toggleExpanded} />
+                <MenuButtonResponsive onExpand={toggleExpanded} expanded={expanded} />
                 <div className="h-screen bg-[#F8F8F8] overflow-y-auto overflow-x-hidden">
                     <AboutPresentation />
                     <AboutCv />

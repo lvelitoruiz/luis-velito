@@ -12,6 +12,7 @@ import { ProjectLeft } from './ProjectLeft'
 import { ProjectRight } from './ProjectRight'
 import { ProjectPresentation } from './ProjectPresentation'
 import { PageProps } from 'gatsby'
+import { MenuButtonResponsive } from './MenuButtonResponsive'
 
 export const ProjectCentral = ({information}: any) => {
 
@@ -29,6 +30,7 @@ export const ProjectCentral = ({information}: any) => {
         <div className="h-screen bg-[#F8F8F8] overflow-y-auto overflow-x-hidden">
             <MenuButton onExpand={toggleExpanded} />
             <Navigation expanded={expanded} onExpand={toggleExpanded} />
+            <MenuButtonResponsive onExpand={toggleExpanded} expanded={expanded} />
 
             <div className="h-screen bg-[#F8F8F8] overflow-y-auto overflow-x-hidden">
 

@@ -4,6 +4,7 @@ import { MenuButton } from './MenuButton'
 import { Navigation } from './Navigation';
 import { GalleryIndex } from './GalleryIndex';
 import { ProjectBanner } from './ProjectBanner';
+import { MenuButtonResponsive } from './MenuButtonResponsive';
 
 export const Project = () => {
 
@@ -17,6 +18,7 @@ export const Project = () => {
         <div className="h-screen bg-[#F8F8F8] overflow-y-auto overflow-x-hidden">
             <MenuButton onExpand={toggleExpanded} />
             <Navigation expanded={expanded} onExpand={toggleExpanded} />
+            <MenuButtonResponsive onExpand={toggleExpanded} expanded={expanded} />
 
             <div className="h-screen bg-[#F8F8F8] overflow-y-auto overflow-x-hidden">
                 
