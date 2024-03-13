@@ -7,7 +7,7 @@ export const Footer = () => {
             <div>
                 <Wave />
             </div>
-            <footer className="bg-[#3586ff] py-5 relative mt-0">
+            <footer className="bg-[#ED6459] py-5 relative mt-0">
                 <div className="pt-2 pb-10 md:pb-24">
                     <div className="flex flex-col-reverse md:flex-row justify-between items-center text-white px-16">
                         <div className='block'>

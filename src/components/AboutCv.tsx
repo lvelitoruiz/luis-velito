@@ -56,7 +56,7 @@ export const AboutCv = () => {
                 <a
                     href={allWpPage.edges[0].node.cvAbout.resume.node.publicUrl}
                     target='_blank'
-                    className="cursor-pointer text-xs mb-4 text-white relative inline-block gap-1 py-3 pl-3 pr-4 items-center bg-[#3586ff] hover:bg-[#6692d5] transition-all ease-in-out duration-300"
+                    className="cursor-pointer text-xs mb-4 text-white relative inline-block gap-1 py-3 pl-3 pr-4 items-center bg-[#1C1B20] hover:bg-[#302e37] transition-all ease-in-out duration-300"
                     download
                 >
                     <i className="icon-arrow-left -rotate-90 inline-block text-xs text-white"></i>
