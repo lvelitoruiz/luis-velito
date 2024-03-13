@@ -56,8 +56,8 @@ export const AboutSkills = forwardRef<HTMLDivElement, AboutSkillsProps>(({change
 
 
     return (
-        <div ref={ref} className="flex flex-col md:flex-row md:justify-between md:items-center lg:items-start pb-20">
-            <div className="w-full md:w-6/12 px-4 mb-10 md:mb-0 md:pl-[15%]">
+        <div ref={ref} className="flex flex-col lg:flex-row md:justify-between md:items-center lg:items-start pb-20">
+            <div className="w-full lg:w-6/12 px-4 mb-10 md:mb-0 md:pl-[15%] md:pr-[15%] lg:pr-0">
                 <h3 className="font-bold italic text-[30px] text-[#1C1B20] leading-none mb-10">{allWpPage.edges[0].node.metrics.title}</h3>
                 {
                     formatted !== null && formatted.map((item: any, index: number) => {
@@ -67,7 +67,7 @@ export const AboutSkills = forwardRef<HTMLDivElement, AboutSkillsProps>(({change
                     })
                 }
             </div>
-            <div className="w-full md:w-5/12 p-4 md:p-0 mt-10">
+            <div className="w-full lg:w-5/12 p-4 md:p-0 mt-10 md:pl-[15%] md:pr-[15%] lg:pr-0 lg:pl-0">
                 <div className="grid gap-y-10 grid-cols-2 lg:grid-cols-2 lg:mb-10">
                     {
                         allWpPage.edges[0].node.metrics.texts.map((item: any, index: number) => {

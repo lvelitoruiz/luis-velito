@@ -49,8 +49,8 @@ export const AboutCv = () => {
 
 
     return (
-        <div className="flex flex-col md:flex-row justify-between items-center py-20">
-            <div className="md:w-6/12 pl-4 md:pl-[15%] pb-12 md:pb-0">
+        <div className="flex flex-col lg:flex-row justify-between items-center py-20">
+            <div className="lg:w-6/12 pl-4 md:pl-[15%] pb-12 md:pb-0">
                 <h3 className="font-bold italic text-[30px] text-[#1C1B20] mb-5 leading-none">{allWpPage.edges[0].node.cvAbout.title1}</h3>
                 <div className="text-[#606060] leading-[30px] mb-10" dangerouslySetInnerHTML={{ __html: allWpPage.edges[0].node.cvAbout.description }}></div>
                 <a
@@ -63,7 +63,7 @@ export const AboutCv = () => {
                     <span className='ml-2'>Download Resume</span>
                 </a>
             </div>
-            <div className='w-full md:w-5/12 min-h-[566px] lg:min-h-[800px] relative overflow-hidden'>
+            <div className='w-full lg:w-6/12 min-h-[566px] lg:min-h-[800px] relative overflow-hidden'>
                 <div
                     className="flex items-center flex-col w-full h-[520px] md:h-[800px]"
                 >
