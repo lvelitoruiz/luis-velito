@@ -39,6 +39,7 @@ export const AbouthMethods = () => {
 
     const goNext = () => {
         swiperInstanceTimeline?.slideNext();
+        console.log(allWpPage);
     }
 
     const goBack = () => {
@@ -78,7 +79,7 @@ export const AbouthMethods = () => {
                                 allWpPage.edges[0].node.timelineMethods.methods.map((item: any, index: number) => {
                                     return (
                                         <SwiperSlide key={index}>
-                                            <AboutCareerSlide title={item.title} subtitle={item.subtitle} description={item.description} />
+                                            <AboutCareerSlide title={item.tiltle} subtitle={item.subtitle} description={item.description} />
                                         </SwiperSlide>
                                     )
                                 })
