@@ -1,3 +1,138 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@900&display=swap");
+
+body {
+  /* font-family: 'Lato', cursive; */
+  @apply font-lato;
+}
+
+.layout-wrapper {
+  @apply h-screen overflow-hidden w-screen;
+}
+
+.layout-container {
+  @apply h-screen w-full relative;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("/icons/icomoon.eot?3cx4xp");
+  src: url("/icons/icomoon.eot?3cx4xp#iefix") format("embedded-opentype"),
+    url("/icons/icomoon.ttf?3cx4xp") format("truetype"),
+    url("/icons/icomoon.woff?3cx4xp") format("woff"),
+    url("/icons/icomoon.svg?3cx4xp#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-project:before {
+  content: "\e903";
+}
+.icon-nav:before {
+  content: "\e904";
+}
+.icon-coffee:before {
+  content: "\e905";
+}
+.icon-close:before {
+  content: "\e906";
+}
+.icon-close-2:before {
+  content: "\e907";
+}
+.icon-clients:before {
+  content: "\e908";
+}
+.icon-arrow-right:before {
+  content: "\e909";
+}
+.icon-arrow-left:before {
+  content: "\e90a";
+}
+.icon-winner:before {
+  content: "\e90b";
+}
+.icon-insta:before {
+  content: "\e900";
+}
+.icon-in:before {
+  content: "\e901";
+}
+.icon-fb:before {
+  content: "\e902";
+}
+
+.fw-gb {
+  @apply font-roboto font-black;
+}
+
+.g-banner {
+  height: 100vh;
+  background: #ed6459;
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: width 2s;
+}
+
+.g-banner--text {
+  width: 547px;
+  color: white;
+  margin-left: 15%;
+  transition: opacity 0.25s ease-in-out;
+  opacity: 0;
+}
+
+.g-banner.active {
+  height: 100vh;
+  background: #ed6459;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: width 2s;
+}
+
+.g-banner.active .g-banner--text {
+  transition: opacity 0.25s ease-in-out;
+  opacity: 1;
+}
+
+.central-text {
+  @apply text-[100px] md:text-[150px] leading-none text-[#1D1D1D];
+}
+
+.pattern {
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px),
+    radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+.left-image {
+  @apply w-full lg:w-6/12 pl-8 bg-slate-200 h-[315px] md:h-[670px];
+}
