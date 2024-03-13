@@ -50,7 +50,7 @@ export const GalleryIndex = ({ link = true }: any) => {
 
       {
         link && <div className="col-span-12 bg-[#F8F8F8] text-center py-10">
-          <Link className="text-[20px] g-link" to="/projects"><span className="z-10 relative text-black">Show all proyects</span></Link>
+          <Link className="text-[20px] g-link" to="/projects"><span className="relative text-black">Show all proyects</span></Link>
         </div>
       }
     </div>
