@@ -24,7 +24,7 @@ export const ProjectBanner = () => {
 
   
     return (
-        <div className="md:h-screen flex items-end relative pattern overflow-hidden">
+        <div className="md:h-screen flex items-end relative pattern overflow-hidden mb-12 lg:mb-0">
             <p className="absolute top-[30px] left-[15px] text-sm md:hidden">LUISVELITO</p>
             <div className='absolute bottom-0 right-0'>
                 <Lottie className='p-1 scale-[4]' height={600} width={600} animationData={Cubes} loop={true} />

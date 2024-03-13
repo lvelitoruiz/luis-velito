@@ -68,7 +68,7 @@ export const AboutCv = () => {
                     className="flex items-center flex-col w-full h-[520px] md:h-[800px]"
                 >
                     <div
-                        className="flex items-center justify-between  w-full box-border px-4 md:w-[566px] relative z-10"
+                        className="flex items-center justify-between  w-full box-border px-4 md:w-[566px] relative"
                     >
                         <button
                             onClick={goBack}

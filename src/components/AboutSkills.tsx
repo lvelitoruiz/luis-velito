@@ -68,7 +68,7 @@ export const AboutSkills = forwardRef<HTMLDivElement, AboutSkillsProps>(({change
                 }
             </div>
             <div className="w-full md:w-5/12 p-4 md:p-0 mt-10">
-                <div className="grid gap-y-10 lg:grid-cols-2 lg:mb-10">
+                <div className="grid gap-y-10 grid-cols-2 lg:grid-cols-2 lg:mb-10">
                     {
                         allWpPage.edges[0].node.metrics.texts.map((item: any, index: number) => {
                             return (

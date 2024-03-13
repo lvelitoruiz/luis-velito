@@ -36,11 +36,11 @@ export const AboutTech = () => {
                         <h3 className="md:w-7/12 font-bold italic text-[30px] md:text-[40px] text-white mb-5 leading-none">{allWpPage.edges[0].node.indexWork.subtitle}</h3>
                     </div>
                     <div className="px-4 bg-[#1C1B20] md:pl-[15%] md:pr-20 py-14 lg:px-32 mt-5 lg:w-7/12">
-                        <div className="grid gap-4 md:grid-cols-2 mb-4 md:mb-10">
+                        <div className="grid gap-4 grid-cols-2 md:grid-cols-2 mb-4 md:mb-10">
                             {
                                 allWpPage.edges[0].node.indexWork.skills.map((item: any, index: number) => {
                                     return (
-                                        <div className="text-white" key={index}>
+                                        <div className="text-white mb-4 md:mb-0" key={index}>
                                             <p className="font-bold mb-4">{item.title}</p>
                                             {
                                                 item.skill.map((item: any, index: number) => {

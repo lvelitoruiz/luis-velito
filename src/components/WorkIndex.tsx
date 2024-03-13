@@ -42,7 +42,7 @@ export const WorkIndex = () => {
                         <p className="text-[#606060] leading-[30px] mb-10" dangerouslySetInnerHTML={{ __html: allWpPage.edges[0].node.indexWork.description }}></p>
                     </div>
                     <div className="px-4 bg-[#1C1B20] md:pl-[15%] md:pr-20 py-14 lg:px-32 mt-5 lg:w-7/12">
-                        <div className="grid gap-4 md:grid-cols-2 mb-4 md:mb-10">
+                        <div className="grid gap-4 grid-cols-2 md:grid-cols-2 mb-4 md:mb-10">
                             {
                                 allWpPage.edges[0].node.indexWork.skills.map((item: any, index: number) => {
                                     return (

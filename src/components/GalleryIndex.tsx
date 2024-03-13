@@ -34,10 +34,10 @@ export const GalleryIndex = ({ link = true }: any) => {
         allWpPost.edges.map((item: any, index: number) => {
           return (
             <div className="col-span-12 md:col-span-6 lg:col-span-4" key={index}>
-              <div className="relative cursor-pointer h-80">
-                <img src={item.node.projectPosts.galleryImage.node.publicUrl} alt={item.node.projectPosts.legendGallery} className="block w-full object-cover h-full" />
-                <Link to={`/projects/${item.node.slug}`}>
-                  <div className={`absolute top-0 bottom-0 left-0 right-0 h-full flex justify-end flex-col p-5 w-full opacity-0 bg-opacity-0 transition duration-150 ease-linear hover:bg-opacity-60 hover:opacity-100`} style={{ backgroundColor: item.node.projectPosts.color }}>
+              <div className="relative cursor-pointer h-[528px] lg:h-80">
+                <img src={item.node.projectPosts.galleryImage.node.publicUrl} alt={item.node.projectPosts.legendGallery} className="block w-full object-cover h-80 lg:h-full" />
+                <Link className='block' to={`/projects/${item.node.slug}`}>
+                  <div className={`relative lg:absolute top-0 bottom-0 left-0 right-0 h-52 lg:h-full flex justify-center lg:justify-end flex-col p-5 w-full opacity-100 lg:opacity-0 transition duration-150 ease-linear hover:opacity-100`} style={{ backgroundColor: item.node.projectPosts.color }}>
                     <p className="text-[#1C1B20] text-lg font-semibold italic mb-1">{item.node.projectPosts.titleGallery}</p>
                     <p className="text-sm text-white leading-[18px] font-medium" dangerouslySetInnerHTML={{ __html: item.node.projectPosts.descriptionGallery }}></p>
                   </div>
