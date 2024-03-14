@@ -42,7 +42,7 @@ export const AboutPresentation = () => {
                 <div className="md:w-6/12 p-4 md:pl-[15%]">
                     <p className="text-white py-20 md:py-24 pr-10 leading-[30px]" dangerouslySetInnerHTML={{ __html: allWpPage.edges[0].node.aboutLuis.description }}></p>
                 </div>
-                <img className="w-full md:w-6/12" src={allWpPage.edges[0].node.aboutLuis.aboutGallery.nodes[0].publicUrl} alt="" />
+                <img className="w-full md:w-6/12 h-auto object-cover" src={allWpPage.edges[0].node.aboutLuis.aboutGallery.nodes[0].publicUrl} alt="" />
             </div>
         </div>
     )

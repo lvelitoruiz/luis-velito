@@ -3,18 +3,20 @@ import { BorderTop } from '../components/BorderTop'
 import { BorderBottom } from '../components/BorderBottom'
 import { BorderLeft } from '../components/BorderLeft'
 import { BorderRight } from '../components/BorderRight'
-import { MenuButtonResponsive } from '../components/MenuButtonResponsive'
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 export const Layout = ({ children }: { children: ReactNode }) => {
   return (
-    <div className='layout-wrapper overflow-hidden'>
-      <section className='layout-container overflow-hidden'>
-        <BorderTop />
-        <BorderBottom />
-        <BorderLeft />
-        <BorderRight />
-        { children }
-      </section>
-    </div>
+    <ParallaxProvider>
+      <div className='layout-wrapper overflow-hidden'>
+        <section className='layout-container overflow-hidden'>
+          <BorderTop />
+          <BorderBottom />
+          <BorderLeft />
+          <BorderRight />
+          {children}
+        </section>
+      </div>
+    </ParallaxProvider>
   )
 }

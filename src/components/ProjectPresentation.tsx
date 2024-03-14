@@ -17,15 +17,15 @@ export const ProjectPresentation = ({color,legend,title,subtitle,description1,de
                 </div>
                 <div className="grid grid-cols-6 lg:grid-cols-12 mt-20 gap-20">
                     <div className="col-span-5 lg:col-span-3">
-                        <p className="text-white italic mb-3 opacity-70">Objectif</p>
+                        <p className="text-white italic mb-3 opacity-70">The Client</p>
                         <p className="leading-[30px] text-white" dangerouslySetInnerHTML={{ __html: description1 }}></p>
                     </div>
-                    <div className="col-span-5 lg:col-span-3">
-                        <p className="text-white italic mb-3 opacity-70">Objectif</p>
+                    <div className="col-span-5 lg:col-span-4">
+                        <p className="text-white italic mb-3 opacity-70">Description</p>
                         <p className="leading-[30px] text-white" dangerouslySetInnerHTML={{ __html: description2 }}></p>
                     </div>
-                    <div className="col-span-5 lg:col-span-3">
-                        <p className="text-white italic mb-3 opacity-70">Objectif</p>
+                    <div className="col-span-5 lg:col-span-2">
+                        <p className="text-white italic mb-3 opacity-70">Tech Stack</p>
                         {
                             list.map( (item:any,index:number) => {
                                 return(<p className="leading-[30px] text-white" key={index}><a href={item.link} target='_blank'>{item.text}</a></p>)

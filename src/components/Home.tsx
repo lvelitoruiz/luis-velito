@@ -9,11 +9,13 @@ import { WorkProjects } from './WorkProjects';
 import { GalleryIndex } from './GalleryIndex';
 import { Footer } from './Footer';
 import { MenuButtonResponsive } from './MenuButtonResponsive';
+import { useInView } from 'react-intersection-observer';
 
 export const Home = () => {
     const divRef = useRef<HTMLDivElement>(null);
     const [expanded, setExpanded] = useState(false);
     const [toExpand, setExpand] = useState(false);
+    const [move, setMove] = useState(false);
 
     const [scrollY, setScrollY] = useState<number>(0);
 
@@ -21,6 +23,10 @@ export const Home = () => {
         const scrollTop = divRef.current?.scrollTop || 0;
         setScrollY(scrollTop);
     };
+
+    const { ref, inView } = useInView({
+        threshold: 0.6,
+    });
 
     useEffect(() => {
         if (scrollY >= 20) {
@@ -42,6 +48,14 @@ export const Home = () => {
         setExpanded(!expanded);
     }
 
+    useEffect( () => {
+        if(inView) {
+            setMove(true)
+        } else {
+            setMove(false)
+        }
+    },[inView]);
+
     return (
         <div ref={divRef} onScroll={handleScroll} className="h-screen bg-[#F8F8F8] overflow-y-auto overflow-x-hidden">
             <MenuButton onExpand={toggleExpanded} />
@@ -49,7 +63,7 @@ export const Home = () => {
             <MenuButtonResponsive onExpand={toggleExpanded} expanded={expanded} />
             <Banner expanded={toExpand} />
 
-            <Carousel />
+            <Carousel ref={ref} move={move} />
 
             <WorkIndex />
 

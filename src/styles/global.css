@@ -136,3 +136,7 @@ body {
 .left-image {
   @apply w-full lg:w-6/12 pl-8 bg-slate-200 h-[315px] md:h-[670px];
 }
+
+.description-lead strong {
+  color: #ed6459;
+}

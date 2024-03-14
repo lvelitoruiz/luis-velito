@@ -60,7 +60,7 @@ export const AbouthMethods = () => {
                     <div className="flex gap-10 items-start overflow-auto pb-10">
                         <Swiper
                             modules={[EffectFade, Pagination]}
-                            spaceBetween={0}
+                            spaceBetween={32}
                             breakpoints={{
                                 320: {
                                     slidesPerView: 1,
