@@ -4,8 +4,8 @@ export const ProjectLeft = ({image,title,description}:any) => {
     return (
         <div className="flex flex-col-reverse lg:flex-row items-center pt-10 md:pt-20 lg:py-20">
             <div className="left-image flex items-center justify-center">
-                <div className='bg-white shadow-lg w-[50%] h-[80%]'>
-                    <img className="object-cover h-full w-full" src={image} alt="" />
+                <div className='bg-white shadow-lg max-w-[500px]'>
+                    <img className="block h-auto w-full max-w-[500px]" src={image} alt="" />
                 </div>
             </div>
             <div className="w-full pr-4 pl-4 md:pl-[10%] md:pr-[10%] lg:pr-0 lg:w-3/12 lg:pl-20">
