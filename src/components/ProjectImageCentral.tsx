@@ -2,8 +2,8 @@ import React from 'react'
 
 export const ProjectImageCentral = ({image}: any) => {
     return (
-        <div className='h-[281px] md:h-[781px]'>
-            <img className="object-cover h-full w-full" src={image} alt="" />
+        <div className='min-h-[281px] md:min-h-[500px]'>
+            <img className="object-cover h-auto w-full" src={image} alt="" />
         </div>
     )
 }

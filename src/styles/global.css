@@ -134,7 +134,7 @@ body {
 }
 
 .left-image {
-  @apply w-full lg:w-6/12 pl-8 bg-slate-200 h-[315px] md:h-[670px];
+  @apply w-full lg:w-6/12 pl-8 bg-slate-200 min-h-[315px] md:min-h-[670px] py-16;
 }
 
 .description-lead strong {
