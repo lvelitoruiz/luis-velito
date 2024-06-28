@@ -72,7 +72,7 @@ export const AboutCareer = () => {
                                     slidesPerView: 3,
                                 },
                             }}
-                            className='flex gap-10 items-start overflow-auto pb-10'
+                            className='flex w-full gap-10 items-start overflow-auto pb-10'
                             onSwiper={(swiper) => setSlider(swiper)}
                         >
                             {

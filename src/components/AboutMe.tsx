@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react'
 import { MenuButton } from './MenuButton'
 import { Navigation } from './Navigation'
 import { Footer } from './Footer';
-import { Titles } from './Titles';
 import { AboutPresentation } from './AboutPresentation';
 import { AboutCv } from './AboutCv';
 import { AboutSkills } from './AboutSkills';
@@ -20,9 +19,6 @@ export const AboutMe = () => {
 
     const divRef = useRef<HTMLDivElement>(null);
     const [expanded, setExpanded] = useState(false);
-
-    const aboutSkillsRef = useRef<HTMLDivElement>(null);
-
     const [isOnAbout, setIsOnAbout] = useState(false);
 
     const toggleExpanded = () => {
