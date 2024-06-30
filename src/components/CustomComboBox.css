@@ -1,7 +1,7 @@
 
 
 .custom-combo-container {
-  @apply w-full flex border-4 bg-clip-padding border-transparent justify-between h-14 cursor-pointer items-center bg-blue-500 px-2 rounded-2xl transition-all duration-500 ease-in-out;
+  @apply w-full font-extralight flex border-4 bg-clip-padding border-transparent justify-between h-14 cursor-pointer items-center bg-blue-500 px-2 rounded-2xl transition-all duration-500 ease-in-out;
 }
 
 .custom-combo-container:hover, .custom-combo-container.active {
@@ -20,10 +20,53 @@
   @apply duration-300 ease-in-out rotate-90;
 }
 
-.custom-combo-list {
+.custom-combo-options {
   @apply absolute top-full mt-1 left-0 w-full max-h-[160px] overflow-y-auto bg-gray-500 rounded-2xl list-none px-0 py-2 text-white text-xs m-0 z-50
 }
 
+.custom-combo-list {
+  @apply absolute top-full mt-1 left-0 w-full max-h-[160px] overflow-y-auto bg-gray-500 rounded-2xl list-none p-0 text-white text-xs m-0 z-50
+}
+
 .custom-combo-option {
-  @apply block px-4 cursor-pointer hover:bg-blue-500 py-3;
+  @apply flex px-4 cursor-pointer hover:bg-blue-500 py-3 items-center opacity-90 border-b border-b-gray-600;
+}
+
+
+/* ligth mode */
+
+.custom-combo-container-ligth {
+  @apply w-full font-extralight flex border-4 bg-clip-padding border-gray-50 justify-between h-14 cursor-pointer items-center bg-white px-2 rounded-2xl transition-all duration-500 ease-in-out;
+}
+
+.custom-combo-container-ligth:hover, .custom-combo-container-ligth.active {
+  @apply bg-gray-50 border-4 bg-clip-padding border-gray-300 h-14 duration-500 transition-all ease-in-out;
+}
+
+.custom-combo-input-ligth {
+  @apply w-full p-2 cursor-pointer h-full box-border outline-none bg-transparent disabled:bg-transparent text-gray-700 placeholder:text-gray-600;
+}
+
+.custom-combo-handler-ligth {
+  @apply transition-all duration-300 ease-in-out text-sm px-2 text-gray-700 -rotate-90;
+}
+
+.custom-combo-container-ligth.active .custom-combo-handler-ligth {
+  @apply duration-300 ease-in-out rotate-90;
+}
+
+.custom-combo-options-ligth {
+  @apply absolute top-full mt-1 left-0 w-full max-h-[160px] overflow-y-auto bg-gray-500 rounded-2xl list-none px-0 py-2 text-white text-xs m-0 z-50
+}
+
+.custom-combo-list-ligth {
+  @apply absolute top-full mt-1 left-0 w-full max-h-[160px] overflow-y-auto bg-gray-500 rounded-2xl list-none p-0 text-white text-xs m-0 z-50
+}
+
+.custom-combo-option-ligth {
+  @apply flex px-4 cursor-pointer hover:bg-blue-500 py-3 items-center opacity-90 border-b border-b-gray-600;
+}
+
+.custom-combo-option-ligth.selected, .custom-combo-option.selected {
+  @apply bg-blue-500;
 }
